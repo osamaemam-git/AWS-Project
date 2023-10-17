@@ -15,6 +15,8 @@ export function ApiStack({ stack }: StackContext) {
       "POST /notes": "packages/functions/src/create.handler",
       "GET /notes/{id}": "packages/functions/src/get.main",
       "PUT /notes/{id}": "packages/functions/src/update.main",
+      "GET /notes": "packages/functions/src/list.main",
+      "DELETE /notes/{id}": "packages/functions/src/delete.main",
     },
   });
 
